@@ -15,28 +15,11 @@ export default function AppRouter() {
       <Suspense fallback={<div>Carregando...</div>}>
         <Routes>
           {/* public routes */}
-          <Route path={paths.login} element={<Home />} />
           {/*<Route path={paths.login} element={<Login />} /> */}
 
           {/* private routes */}
           <Route element={<MainLayout />}>
-            <Route
-              path={paths.home}
-              element={
-                <PrivateRoute>
-                  <Dashboard />
-                </PrivateRoute>
-              }
-            />
-
-            <Route
-              path={paths.dashboard}
-              element={
-                <PrivateRoute>
-                  <Dashboard />
-                </PrivateRoute>
-              }
-            />
+            <Route path={paths.home} element={<Home />} />
           </Route>
           {/* 404 */}
           <Route path="*" element={<div>Página não encontrada</div>} />

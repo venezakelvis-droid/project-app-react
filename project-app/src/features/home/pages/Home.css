@@ -1,0 +1,95 @@
+.home {
+  padding: 3rem 1rem; /* padding horizontal leve */
+}
+
+.home__header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.home__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.home__subtitle {
+  margin-top: 0.5rem;
+  color: var(--color-text-light);
+  font-size: 1rem;
+}
+
+/* Grid responsivo */
+.home__grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Botão do footer */
+.home__button {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 0.85rem;
+  transition: var(--transition);
+  border: none;
+}
+
+.home__button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+/* ========================= */
+/* RESPONSIVO */
+/* ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .home__title {
+    font-size: 1.75rem;
+  }
+
+  .home__subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .home {
+    padding: 2rem 1rem;
+  }
+
+  .home__title {
+    font-size: 1.5rem;
+  }
+
+  .home__subtitle {
+    font-size: 0.9rem;
+  }
+
+  .home__grid {
+    grid-template-columns: 1fr; /* uma coluna para mobile */
+    gap: 1rem;
+  }
+
+  .home__button {
+    width: 100%; /* botão ocupa toda a largura do card */
+    text-align: center;
+    padding: 0.6rem 0;
+    font-size: 0.9rem;
+  }
+}
+
+/* Pequenos dispositivos extra */
+@media (max-width: 480px) {
+  .home__title {
+    font-size: 1.3rem;
+  }
+
+  .home__subtitle {
+    font-size: 0.85rem;
+  }
+}

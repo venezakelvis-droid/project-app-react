@@ -1,0 +1,131 @@
+/* Container do carrinho */
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  max-width: 90%;
+  height: 100%;
+  background-color: var(--color-surface);
+  box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.cart--open {
+  transform: translateX(0);
+}
+
+/* Header */
+.cart__header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Itens */
+.cart__items {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Empty state */
+.cart__empty {
+  text-align: center;
+  color: var(--color-text-light);
+}
+
+/* Footer */
+.cart__footer {
+  padding: 1rem;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Total */
+.cart__total {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Item */
+.cart-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.cart-item__image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.cart-item__info {
+  flex: 1;
+}
+
+.cart-item__name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.cart-item__price {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+
+.cart-item__actions {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.cart-item__quantity {
+  width: 50px;
+  padding: 0.25rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+}
+
+/* Toggle mobile */
+.cart-toggle {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1100;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.25rem;
+  border: none;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cart {
+    width: 90%;
+  }
+  .cart-toggle {
+    display: flex;
+  }
+}

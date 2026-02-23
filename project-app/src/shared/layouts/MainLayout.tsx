@@ -8,7 +8,6 @@ export default function MainLayout() {
         <Navbar
         items={[
           { label: "Home", path: "/" },
-          { label: "Dashboard", path: "/dashboard" },
         ]}
       />
       </header>
