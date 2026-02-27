@@ -115,7 +115,7 @@
   height: 50px;
   font-size: 1.25rem;
   border: none;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
 }

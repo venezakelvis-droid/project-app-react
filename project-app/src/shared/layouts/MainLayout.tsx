@@ -8,6 +8,9 @@ export default function MainLayout() {
         <Navbar
         items={[
           { label: "Home", path: "/" },
+          { label: "+ Rebanho", path: "/breeding" },
+          { label: "+ Pedido", path: "/order" },
+          { label: "Relatorio", path: "/relatorio" },
         ]}
       />
       </header>
