@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import type { NavbarProps } from "./types";
+import { useModal } from "../../context/ModalContext";
+import HerdForm from "../../../modules/herds/components/HerdForm";
 
 export default function Navbar({ logo, items }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,6 +11,8 @@ export default function Navbar({ logo, items }: NavbarProps) {
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
+
+  const { openModal } = useModal();
 
   return (
     <>
@@ -26,16 +30,28 @@ export default function Navbar({ logo, items }: NavbarProps) {
           <ul className={styles.desktopMenu}>
             {items.map((item) => (
               <li key={item.path}>
-                <Link
-                  to={item.path}
-                  className={
-                    location.pathname === item.path
-                      ? styles.active
-                      : ""
-                  }
-                >
-                  {item.label}
-                </Link>
+                {item.path === "/breeding" ? (
+                  <button
+                    type="button"
+                    onClick={() =>
+                      openModal(<HerdForm />, "Cadastrar Rebanho")
+                    }
+                    className={styles.navButton}
+                  >
+                    {item.label}
+                  </button>
+                ) : (
+                  <Link
+                    to={item.path}
+                    className={
+                      location.pathname === item.path
+                        ? styles.active
+                        : ""
+                    }
+                  >
+                    {item.label}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
@@ -49,16 +65,27 @@ export default function Navbar({ logo, items }: NavbarProps) {
 
       {/* Mobile Sidebar */}
       <aside
-        className={`${styles.sidebar} ${
-          isOpen ? styles.open : ""
-        }`}
+        className={`${styles.sidebar} ${isOpen ? styles.open : ""
+          }`}
       >
         <ul>
           {items.map((item) => (
             <li key={item.path}>
-              <Link to={item.path} onClick={closeMenu}>
-                {item.label}
-              </Link>
+              {item.path === "/breeding" ? (
+                <button
+                  onClick={() => {
+                    openModal(<HerdForm />, "Cadastrar Rebanho");
+                    closeMenu();
+                  }}
+                  className={styles.navButton}
+                >
+                  {item.label}
+                </button>
+              ) : (
+                <Link to={item.path} onClick={closeMenu}>
+                  {item.label}
+                </Link>
+              )}
             </li>
           ))}
         </ul>

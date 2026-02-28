@@ -93,6 +93,13 @@
 .sidebar.open {
   right: 0;
 }
+.navButton {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
 
 /* Responsive */
 @media (max-width: 768px) {

@@ -1,6 +1,7 @@
 .home {
   padding: 3rem 1rem;
-  position: relative; /* importante para contexto */
+  position: relative; 
+  margin-top: 30px;
 }
 
 .home__header {
