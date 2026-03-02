@@ -3,11 +3,15 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import AppRouter from './app/routes/AppRouter.tsx'
 import { ModalProvider } from './shared/context/ModalContext.tsx'
+import { AuthProvider } from './features/auth/context/AuthContext.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <ModalProvider>
-      <AppRouter />
-    </ModalProvider>
+    <AuthProvider>
+      <ModalProvider>
+        <AppRouter />
+      </ModalProvider>
+    </AuthProvider>
+
   </StrictMode>,
 )

@@ -28,7 +28,8 @@
 .home__grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  margin-bottom: 1rem; /* espaço antes da paginação */
 }
 
 /* ========================= */
@@ -102,6 +103,21 @@
   color: #222; /* 🔥 ADICIONE ISSO */
 }
 
+/* Paginação fixa abaixo da grid */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Mobile: apenas 1 card por linha */
+@media (max-width: 768px) {
+ 
+}
 /* ========================= */
 /* RESPONSIVO */
 /* ========================= */
@@ -143,6 +159,9 @@
     right: 1.5rem;
     font-size: 1.6rem;
   }
+   .home__grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Pequenos dispositivos */
@@ -159,5 +178,8 @@
     width: 50px;
     height: 50px;
     font-size: 1.4rem;
+  }
+   .home__grid {
+    grid-template-columns: 1fr;
   }
 }

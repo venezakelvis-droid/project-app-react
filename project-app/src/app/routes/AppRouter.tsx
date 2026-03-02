@@ -6,7 +6,7 @@ import MainLayout from "../../shared/layouts/MainLayout";
 
 // Lazy loading
 const Home = lazy(() => import("../../features/home/pages/Home"));
-//const Login = lazy(() => import("@/features/auth/pages/Login"));
+const Login = lazy(() => import("../../features/auth/pages/Login"));
 //const Dashboard = lazy(() => import("@/features/dashboard/pages/Dashboard"));
 
 export default function AppRouter() {
@@ -14,14 +14,23 @@ export default function AppRouter() {
     <BrowserRouter>
       <Suspense fallback={<div>Carregando...</div>}>
         <Routes>
-          {/* public routes */}
-          {/*<Route path={paths.login} element={<Login />} /> */}
+          {/* Public */}
+          <Route path={paths.login} element={<Login />} />
 
-          {/* private routes */}
-          <Route element={<MainLayout />}>
+          {/* Private */}
+          <Route
+            element={
+              <PrivateRoute>
+                <MainLayout />
+              </PrivateRoute>
+            }
+          >
             <Route path={paths.home} element={<Home />} />
+            <Route path="/order" element={<Home />} />
+            <Route path="/breeding" element={<Home />} />
+            <Route path="/logout" element={<Home />} />
           </Route>
-          {/* 404 */}
+
           <Route path="*" element={<div>Página não encontrada</div>} />
         </Routes>
       </Suspense>

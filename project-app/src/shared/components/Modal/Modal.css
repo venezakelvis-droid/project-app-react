@@ -10,12 +10,13 @@
 }
 
 .modal {
-  background: #fff;
+  background: #ffffff;
   width: 100%;
   border-radius: 12px;
   animation: fadeIn 0.2s ease-in-out;
   max-height: 90vh;
   overflow-y: auto;
+  color: black;
 }
 
 .modal--sm {
