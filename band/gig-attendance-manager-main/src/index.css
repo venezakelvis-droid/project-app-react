@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BANDA CÍVICA — Professional Design System
+ * Orange, Red & Gold palette. All colors HSL.
+ */
+
+@layer base {
+  :root {
+    /* Core surfaces — deep dark grey (almost black) */
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 96%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 96%;
+
+    /* Brand: Orange (Laranja) */
+    --primary: 25 90% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 25 90% 55%;
+
+    /* Secondary: Red (Vermelho escuro/fechado) */
+    --secondary: 0 75% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Accent: Gold (Dourado) */
+    --accent: 45 90% 55%;
+    --accent-foreground: 0 0% 10%;
+
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 65%;
+
+    --destructive: 0 85% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 150 70% 40%;
+    --warning: 40 90% 50%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 14%;
+    --ring: 25 90% 55%;
+
+    --radius: 1rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(0 75% 45%) 0%, hsl(25 90% 55%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(25 90% 55%), hsl(45 90% 55%));
+    --gradient-cyan: linear-gradient(135deg, hsl(45 90% 55%), hsl(25 90% 55%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 10% / 0.8), hsl(0 0% 5% / 0.6));
+    --gradient-mesh: radial-gradient(at 20% 20%, hsl(25 90% 55% / 0.15) 0px, transparent 50%),
+                     radial-gradient(at 80% 30%, hsl(0 75% 45% / 0.1) 0px, transparent 50%),
+                     radial-gradient(at 50% 80%, hsl(45 90% 55% / 0.15) 0px, transparent 50%);
+
+    /* Shadows / glows - Reduced for non-neon look */
+    --shadow-glow: 0 0 20px hsl(25 90% 55% / 0.2);
+    --shadow-cyan: 0 0 20px hsl(45 90% 55% / 0.2);
+    --shadow-elegant: 0 20px 40px -10px hsl(0 0% 0% / 0.8);
+    --shadow-card: 0 8px 24px hsl(0 0% 0% / 0.6);
+
+    /* Motion */
+    --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-primary: 25 90% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 0 0% 96%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 25 90% 55%;
+  }
+
+  /* Single dark theme — no light mode toggle */
+  .dark { color-scheme: dark; }
+}
+
+@layer base {
+  * { @apply border-border; }
+  html {
+    color-scheme: dark;
+    overflow-x: hidden;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    background-image: var(--gradient-mesh);
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Syne', 'Space Grotesk', sans-serif;
+    letter-spacing: -0.02em;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  ::selection { background: hsl(var(--primary) / 0.4); color: hsl(var(--foreground)); }
+
+  /* Mobile-first: ensure containers don't overflow */
+  .container {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+}
+
+@layer components {
+  .glass {
+    background: hsl(var(--card) / 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--border) / 0.6);
+  }
+  .glass-strong {
+    background: hsl(var(--card) / 0.85);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid hsl(var(--border));
+  }
+  .text-gradient {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-gradient-primary {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .glow-primary { box-shadow: var(--shadow-glow); }
+  .glow-cyan { box-shadow: var(--shadow-cyan); }
+  .grid-bg {
+    background-image:
+      linear-gradient(hsl(var(--border) / 0.4) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border) / 0.4) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+}
+
+@layer utilities {
+  .animate-float { animation: float 6s ease-in-out infinite; }
+  .animate-pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+  .animate-fade-up { animation: fade-up 0.7s var(--ease-smooth) both; }
+  .animate-shimmer {
+    background: linear-gradient(110deg, transparent 40%, hsl(var(--primary) / 0.3) 50%, transparent 60%);
+    background-size: 200% 100%;
+    animation: shimmer 2.5s linear infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 30px hsl(var(--primary) / 0.4); }
+  50% { box-shadow: 0 0 60px hsl(var(--primary) / 0.7); }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes shimmer {
+  to { background-position: -200% 0; }
+}
