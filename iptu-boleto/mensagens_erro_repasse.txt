@@ -1,0 +1,95 @@
+[2026-02-25 12:57:17] ❌ Error searching for property:00363/06
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-25 13:01:42] ❌ Error searching for property:00449/05
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-25 13:07:43] ❌ Error searching for property:00545/06
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-25 13:10:22] ❌ Error searching for property:00573/08
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-25 13:14:38] ❌ Error searching for property:00633/04
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-25 13:16:50] ❌ Error searching for property:00653/07
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 08:10:26] ❌ Error searching for property:00573/08
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 08:15:01] ❌ Error searching for property:00633/04
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 08:17:15] ❌ Error searching for property:00653/07
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 08:30:44] ❌ Error searching for property:00736/03
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 08:35:27] ❌ Error searching for property:00760/03
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 08:35:40] ❌ Error searching for property:00762/01
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 08:36:24] ❌ Error searching for property:00768/04
+Motivo: Erro retornado pelo sistema: Cadastro Imobiliário não encontrado.
+Cadastro é obrigatório.
+[2026-02-26 08:36:27] ❌ Error searching for property:00769/02
+Motivo: Erro retornado pelo sistema: Cadastro Imobiliário não encontrado.
+Cadastro é obrigatório.
+[2026-02-26 08:36:41] ❌ Error searching for property:00773/02
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 08:37:17] ❌ Error searching for property:00777/01
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 08:37:31] ❌ Error searching for property:00783/02
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 08:37:44] ❌ Error searching for property:00784/02
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 08:38:21] ❌ Error searching for property:00792/02
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 08:55:38] ❌ Error searching for property:00949/04
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 09:11:26] ❌ Error searching for property:01087/02 0066
+Motivo: Erro retornado pelo sistema: Cadastro Imobiliário não encontrado.
+Cadastro é obrigatório.
+[2026-02-26 09:16:00] ❌ Error searching for property:01124/03
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 09:17:04] ❌ Error searching for property:01128/02
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 09:18:07] ❌ Error searching for property:01135/07
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 09:22:22] ❌ Error searching for property:01170/06
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 09:55:21] ❌ Error searching for property:01401/02
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 09:58:26] ❌ Error searching for property:01427/01
+Motivo: Erro retornado pelo sistema: Cadastro Imobiliário não encontrado.
+Cadastro é obrigatório.
+[2026-02-26 10:01:35] ❌ Error searching for property:01451/02
+Motivo: Erro retornado pelo sistema: Cadastro Imobiliário não encontrado.
+Cadastro é obrigatório.
+[2026-02-26 10:05:12] ❌ Error searching for property:01475/01
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 10:11:09] ❌ Error searching for property:01509/01
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 10:23:08] ❌ Error searching for property:01574/03
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 10:34:09] ❌ Error searching for property:01638/02
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 10:40:56] ❌ Error searching for property:01675/01
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 10:49:49] ❌ Error searching for property:01716/01
+Motivo: Erro retornado pelo sistema: Cadastro Imobiliário não encontrado.
+Cadastro é obrigatório.
+[2026-02-26 11:00:38] ❌ Error searching for property:01774/01
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 11:00:55] ❌ Error searching for property:01775/01
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 11:02:00] ❌ Error searching for property:01785/01
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 11:15:24] ❌ Error searching for property:01837/03
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 11:21:09] ❌ Error searching for property:01859/01 1413
+Motivo: Erro retornado pelo sistema: Cadastro Imobiliário não encontrado.
+Cadastro é obrigatório.
+[2026-02-26 11:21:48] ❌ Error searching for property:01861/02
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 11:30:24] ❌ Error searching for property:01891/01
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 11:46:58] ❌ Error searching for property:01945/01
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 12:04:22] ❌ Error searching for property:02004/01
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
+[2026-02-26 12:04:35] ❌ Error searching for property:02005/01
+Motivo: Erro retornado pelo sistema: Nenhum débito encontrado.
